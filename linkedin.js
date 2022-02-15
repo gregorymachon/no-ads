@@ -1,10 +1,11 @@
-let LinkedInCleanUp = () => {
+// LinkedIn
+let PromotedContentCleanUp = () => {
   document.querySelectorAll("span.feed-shared-actor__description, span.feed-shared-actor__sub-description").forEach((item) => {
     if (item.innerHTML.trim() === "Promoted") {
-      item.parentElement.parentElement.parentElement.parentElement.remove();
+      item.closest("div[data-id^='urn:li:activity']").remove();
     }
   });
 };
 
-document.addEventListener("DOMContentLoaded", LinkedInCleanUp);
-document.querySelector("#main").addEventListener("DOMNodeInserted", LinkedInCleanUp);
+document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
+document.querySelector("#main").addEventListener("DOMNodeInserted", PromotedContentCleanUp);
