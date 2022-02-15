@@ -1,6 +1,7 @@
 {
   "name": "No Ads",
   "description": "Block adds on Facebook, LinkedIn, Twitter",
+  "author": "Gregory Machon",
   "version": "1.0.2",
   "manifest_version": 3,
   "content_scripts": [
