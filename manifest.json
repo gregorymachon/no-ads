@@ -1,8 +1,8 @@
 {
-  "name": "No Ads",
-  "description": "Block adds on Facebook, LinkedIn, Twitter",
+  "name": "No Feed Ads",
+  "description": "Block promoted/sponsored in-feed ads in LinkedIn, Twitter and Facebook",
   "author": "Gregory Machon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 3,
   "content_scripts": [
     {
@@ -10,8 +10,12 @@
       "js": ["linkedin.js"]
     },
     {
-      "matches": ["https://twitter.com/*"],
-      "js": ["twitter.js"]
+        "matches": ["https://twitter.com/*"],
+        "js": ["twitter.js"]
+    },
+    {
+        "matches": ["https://www.facebook.com/*"],
+        "js": ["facebook.js"]
     }
   ]
 }
