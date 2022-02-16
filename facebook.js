@@ -4,6 +4,8 @@ let PromotedContentCleanUp = () => {
     item.closest("div[data-pagelet^='FeedUnit_'").remove();
   });
 };
-  
-document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
-document.querySelector("div[role=feed]").addEventListener("DOMNodeInserted", PromotedContentCleanUp);
+
+document.addEventListener("load", () => {
+  PromotedContentCleanUp();
+  document.querySelector("div[role=feed]").addEventListener("DOMNodeInserted", PromotedContentCleanUp);
+});
