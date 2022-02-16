@@ -8,4 +8,4 @@ let PromotedContentCleanUp = () => {
 };
 
 document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
-document.querySelector("main").addEventListener("DOMNodeInserted", PromotedContentCleanUp);
+document.addEventListener("DOMNodeInserted", PromotedContentCleanUp);
