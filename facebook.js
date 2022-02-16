@@ -5,7 +5,5 @@ let PromotedContentCleanUp = () => {
   });
 };
 
-document.addEventListener("load", () => {
-  PromotedContentCleanUp();
-  document.querySelector("div[role=feed]").addEventListener("DOMNodeInserted", PromotedContentCleanUp);
-});
+document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
+document.addEventListener("DOMNodeInserted", PromotedContentCleanUp);
