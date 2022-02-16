@@ -7,7 +7,5 @@ let PromotedContentCleanUp = () => {
   });
 };
 
-document.addEventListener("load", () => {
-  PromotedContentCleanUp();
-  document.querySelector("#main").addEventListener("DOMNodeInserted", PromotedContentCleanUp);
-});
+document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
+document.addEventListener("DOMNodeInserted", PromotedContentCleanUp);
