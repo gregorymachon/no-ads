@@ -1,2 +1,2 @@
 # no-ads
-Chrome extension to block/remove LinkedIn, Twitter and Facebook ads aka "Promoted" or "Sponsored content from your feed.
+Chrome extension to block/remove ads from search results and feeds across Google, LinkedIn, Twitter and Facebook.
