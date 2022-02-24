@@ -7,6 +7,6 @@ let PromotedContentCleanUp = () => {
   });
 };
 
-document.addEventListener("load", PromotedContentCleanUp);
+PromotedContentCleanUp();
 document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
-document.addEventListener("DOMNodeInserted", PromotedContentCleanUp);
+new MutationObserver(PromotedContentCleanUp).observe(document.body, { attributes: false, childList: true, subtree: true });
