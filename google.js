@@ -4,6 +4,5 @@ let PromotedContentCleanUp = () => {
   !!el && el.remove();
 };
 
-document.addEventListener("load", PromotedContentCleanUp);
+PromotedContentCleanUp();
 document.addEventListener("DOMContentLoaded", PromotedContentCleanUp);
-document.addEventListener("DOMNodeInserted", PromotedContentCleanUp);
