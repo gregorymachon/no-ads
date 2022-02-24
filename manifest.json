@@ -1,8 +1,8 @@
 {
   "name": "No Feed Ads",
-  "description": "Block promoted/sponsored in-feed ads in LinkedIn, Twitter and Facebook",
+  "description": "Block/remove ads from search results and feeds across Google, LinkedIn, Twitter and Facebook",
   "author": "Gregory Machon",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "manifest_version": 3,
   "content_scripts": [
     {
